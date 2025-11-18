@@ -1,0 +1,47 @@
+### Terraform ###
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files (may contain sensitive data)
+*.tfvars
+*.tfvars.json
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore Mac files
+.DS_Store
+
+# Ignore any credentials or keys
+**/credentials
+**/*.pem
+**/*.key
+**/secrets.yaml
+```
+
+---
+
+## 🚨 IF YOU ALREADY COMMITTED CREDENTIALS
+
+### **Immediate Actions:**
+
+**1. Revoke Compromised Keys IMMEDIATELY**
+```
+AWS Console → IAM → Users → [Your User] → Security Credentials
+→ Access Keys → Make Inactive / Delete
